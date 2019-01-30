@@ -1,0 +1,58 @@
+\documentclass{jarticle}
+%\bibliographystyle{junsrt}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}			% math系
+\usepackage{amssymb}			% math系
+\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+\usepackage{cite}				% 参考文献
+\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algpseudocode}      %アルゴリズム環境
+\usepackage{listings}  			%アルゴリズム環境
+
+\let\thealgorithm\relax %タイトル番号非表示
+
+\usepackage{comment}			% コメントアウト環境
+\usepackage{here}               % 定理環境
+\usepackage{color}
+\usepackage{citesort}
+
+\begin{document}
+
+\section*{アルゴリズム5}
+
+\begin{algorithm}[H]
+    \caption{Find Small Balanced Vertex Separator}
+    \textbf{初期設定:} \par
+    グラフ$G$ \par
+    正の整数$K$ \par
+    $2/3 \leq \alpha < 1$と$0 < \varepsilon < 1$ \par
+    集合$H := G$と$S' := \{\}$ \par
+    {\setlength{\baselineskip}{10pt}
+    \begin{algorithmic}[1]
+    \While {$|V(H)| > (\alpha + \varepsilon)|V|$}
+        \State {二つの頂点$s,t$を一様ランダムに選ぶ} 
+        \If {$s=t$または$s,t$は隣接}
+            \State {$H[V(H)\backslash (\{s\} \cup \{t\})]$の最大連結成分$C$を計算}
+            \State {$S' := S' \cup \{s\} \cup \{t\}$}
+        \Else 
+            \State {入力(H,K,s,t)でアルゴリズム4を実行：出力を$(S,T)$とする}
+            \State \Comment {$O(K^2m\log n)$}
+            \State {$H[V(H)\backslash (S \cup T \cup \{s\} \cup \{t\})]$の最大連結成分$C$を計算}
+            \State {$H := C$}
+            \State {$S' := S' \cup S \cup T \cup \{s\} \cup \{t\}$}
+        \EndIf
+    \EndWhile \Comment {反復回数は高確率で$O(\varepsilon^{-1}K\log^{1+o(1)} n)$}
+    \State {$G[V\backslash S']$の各連結成分を$|V(C_1)| \geq |V(C_2)| \geq ...$となるように並べる}
+    \State {$A := V(C_1)$}
+    \State {$|A| \leq \alpha|V|$を満たす限り$V(C_2),V(C_3)...$を$A$に追加}
+    \State {$B := V(G)\backslash (A \cup S')$}
+    \State {\textbf{return}} $(A,S',B)$
+    \end{algorithmic}
+    }
+\end{algorithm}
+
+実行時間は高確率で$O(\varepsilon^{-1}K^3\log^{2+o(1)} n)$
+
+\end{document}

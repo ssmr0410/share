@@ -1,0 +1,74 @@
+\documentclass{jarticle}
+%\bibliographystyle{junsrt}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}			% math系
+\usepackage{amssymb}			% math系
+\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+\usepackage{cite}				% 参考文献
+\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algpseudocode}      %アルゴリズム環境
+\usepackage{listings}  			%アルゴリズム環境
+
+\let\thealgorithm\relax %タイトル番号非表示
+
+\usepackage{comment}			% コメントアウト環境
+\usepackage{here}               % 定理環境
+\usepackage{color}
+\usepackage{citesort}
+
+\begin{document}
+
+\section*{アルゴリズム4}
+
+\begin{algorithm}[H]
+    \caption{Find Innermost Cut of Bounded Size}
+    \textbf{初期設定:} \par
+    正の整数$K$と二つの頂点$s,t\in V$ \par
+    $g(s):= g(t) := 1$ \par
+    $k:=0$ \par
+    $H:=G$かつ$S:=T:=\{\}$ \par
+    {\setlength{\baselineskip}{10pt}
+    \begin{algorithmic}[1]
+    \While {$H$にあるs-t点素パスの最大本数が高々$K$}
+        \State {$H$にある点素パスを計算して$k$を更新} \Comment {$O(km)$}
+        \State {アルゴリズム2の計算:出力を$U$とする} \Comment {$O(km\log n)$}
+        \State {アルゴリズム3の計算:出力を$W$とする} \Comment {$O(km\log n)$}
+        \If {$U \neq (s,s,...,s)$}
+            \State {$M_s := V_s(U) \cup U$}
+            \State {$S := U$}
+        \Else 
+            \State {$M_s := \{s\}$}
+        \EndIf
+
+        \If {$W \neq (t,t,...,t)$}
+            \State {$M_t := V_t(W) \cup W$}
+            \State {$T := W$}
+        \Else 
+            \State {$M_t := \{t\}$}
+        \EndIf
+
+        \If {$M_s \cap M_t \neq \emptyset $または$M_s,M_t$間に辺がある}
+            \State {\textbf{break}}
+        \Else 
+            \State {$M_s$を縮約して$s$にする}
+            \State {$M_t$を縮約して$t$にする}
+            \State {並行辺を一つの辺に置き換える}
+            \State {$g(s) := g(s) + |M_s| - 1$} \Comment {$s$に縮約した頂点の数}
+            \State {$g(t) := g(t) + |M_t| - 1$} \Comment {$t$に縮約した頂点の数}
+        \EndIf
+    \EndWhile \Comment {最大$K$回反復}
+    \State {\textbf{return}} $(S,T)$
+    \end{algorithmic}
+    }
+\end{algorithm}
+
+アルゴリズムは$O(K^2m\log n)$で実行される
+
+\section*{分散案}
+s-t点素パス計算：$\tilde{O}(K^{O(1)}(\sqrt{n} + D))$ラウンド \par
+アルゴリズム2,3：$\tilde{O}(K^2n)$ラウンド \par
+$M_s,M_t$の計算：
+
+\end{document}

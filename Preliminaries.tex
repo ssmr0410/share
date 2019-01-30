@@ -1,0 +1,114 @@
+\documentclass{jarticle}
+
+\input{jdummy.def}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}			% math系
+\usepackage{amssymb}			% math系
+%\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+\usepackage{cite}				% 参考文献
+%\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algorithmic}		% アルゴリズム環境
+\usepackage{comment}			% コメントアウト環境
+\usepackage{bm}	%太字形式のベクトル
+
+
+\headsep=1.4cm  %本文上にスペースを空けたい場合は 20mm にする
+
+% 定理環境
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem{fact}{事実}
+\newtheorem{corollary}{系}
+
+
+% 先生コメント用
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newcommand{\Izumi}[1]{\textcolor{blue}{#1}}
+\newcommand{\Izurep}[2]{\textcolor{red}{\sout{#1}}{\Izumi{#2}}}
+
+\begin{document}
+    
+\section*{準備}
+
+\begin{definition}[Subgraph Aggregation]
+    $G=(V,E)$をネットワークグラフとし、$\mathcal{P} =(P_1,...P_{|\mathcal{P}|})$をpartの集合とし、各$P_i$について$H_i$を$P_i$のノード上のGの連結部分グラフとする。必ずしもグラフ$G[P_i]$から誘導されるとは限らない。各部分グラフ$H_i$について、$V(H_i)$内のすべてのノードが部分グラフ$H_i$内の隣接ノードを認識し、それ以外は何も知らないと仮定する。すべてのノード$v\in \bigcup_iP_i$がO(log n)ビットの整数$x_v$を持ち、$\oplus$を長さO（log n）の整数に作用する結合関数とする。$P_i$内の各ノードは値$\bigoplus_{v\in P_i}x_v$、すなわち$P_i$内のすべての値$x_v$の集合$\oplus$を知りたいとする。このようなタスクをオペレーター$\oplus$におけるSubgraph Aggregationと呼ぶ。
+\end{definition}
+
+\begin{lemma}
+    木幅が高々kのグラフ$G=(V,E)$と二つの頂点$s,t\subseteq V$を与えると、$k$点素s-tパスを見つけるか、サイズ$k$以下のs-tノードカットを$\tilde{O}(k^{O(1)}D)$ラウンドで出力することができる。前者の場合、すべてのノードは、それがパス上にあるかどうかを知っており、そうであれば、そのパス上のその前方と後方を知る。後者の場合、$k$点素パスが存在しないという事実と、ノードカットに含まれるかどうかをすべてのノードが知っている。
+\end{lemma}
+
+\begin{corollary}
+    結合演算子$\oplus$について、$Q_G$がグラフ$G$とその直径$D$に依存するパラメータである場合、$\tilde{O}(Q_G)$ラウンドでSubgraph Aggregation問題を解くことができる。
+    \item 全てのグラフ$G:Q_G = O(\sqrt{n}+D)$
+    \item 種数$g$のグラフ$G:Q_G=O(\sqrt{g+1}D)$
+    \item 木幅$k$のグラフ$G:Q_G=\tilde{O}(kD)$
+    \item $H$をマイナーとして含まないグラフ$G:Q_G=\tilde{O}(f(H)\cdot D^2)$,$f$は$H$にのみ依存する関数
+\end{corollary}
+
+\begin{corollary}
+    補題1のグラフ$G$を一般のグラフに置き換えると、最大$\ell$本のs-tパスは$\tilde{O}(\ell^{O(1)}(\sqrt{n}+D))$ラウンドで見つけることができる。
+\end{corollary}
+
+\newpage
+\begin{lemma}[全域木]
+    ネットワークグラフの連結部分グラフ$H\subseteq G$が与えられると、Gの全域木を$O(\log n)$SAラウンドで計算することができる。どのノードもスパニングツリーでの隣接ノードを認識している。
+\end{lemma}
+
+\begin{lemma}[根付き木収集]
+    $G$の木$T$を考える。根$v_r \in V(T)$が与えられると、$O(\log n)$SAラウンドで$v_r$を根とする木$T$を計算することができ、$V(T)-v_r$の各ノードは$v_r$を根とする木Tの親を知る。さらに、各ノード$v_i$が整数$x_i$と共通結合演算子$\oplus$を知っていれば、各ノード$v_i$に部分木収集$\bigoplus_{j\in T(v_i)}x_j$を学習させることができる。ここで、$T(v_i)$は$v_i$をルートとする部分木、すなわち、根への経路に$v_i$を含む$T$内のすべてのノードである。
+\end{lemma}
+
+\begin{lemma}[経路収集]
+    $G$の有向パス$P = \{v_1,...,v_\ell\}$を考える。ここで、各ノード$v_i$はそのパスの先頭ノードと後尾ノードを知っている。$O(\log n)$SAラウンドにおいて、各ノード$v_i$はiの値と経路内のそのインデックスを知ることができる。さらに、各ノード$v_i$が整数$x_i$と共通の結合演算子$\oplus$を知っていれば、各ノード$v_i$に先頭集約$\bigoplus_{j\leq i}xj$と後尾集約$\bigoplus_{j\geq i}x_j$を学習させることができる。
+\end{lemma}
+
+\begin{lemma}[s-tパス]
+    連結部分グラフ$H\subseteq G$と２つの頂点$s,t\in V$が与えられると、$O(\log n)$SAラウンドで$G$における有向s-tパスを計算することができる。すべてのノードは、自分がパス上にあるかどうか、またある場合はそのパス上の先頭ノードと後尾ノードを認識している。
+\end{lemma}
+\newpage
+\begin{definition}
+    Gをグラフとし、$s,t\in V$とする。 ${f_1,...,f_k}$を$G$における一対の点素ｓ−ｔパスの集合とする。
+    この時、すべての$1\leq i\leq k$に対して、$w_i \in f_i$、$s \neq wi \neq t$であれば、$(f_1,f_k)$に関してタプル$(w_1,...,w_i)$をスライスと呼ぶ。
+    XをVの任意の部分集合とし、$s,t = \in X$とする。$G[V\backslash X]$にs-tパスがない場合、$X$は$s$と$t$を分離すると言う。$s$と$t$を切り離すスライスをカットと呼ぶ。
+\end{definition}
+
+\begin{definition}
+    ${f_1,...,f_k}$をs-t点素パスの集合とする。
+    $U=(u_1,...u_k)$および$W=(w_1,...,w_k)$を$(f_1,...,f_k)$に関するスライスとし、すべての$1\leq i\leq k$について、$u_i$は$f_i$における$w_i$の前者または$u_i=w_i$とする。この時$U$は$W$より$S$に近いと言い、$U\preceq W$と書く。もし$1 \leq i \leq k$に対して、さらに$u_i \neq w_i$ならば、$U$は$W$より厳密に$s$に近いと言い、$U \prec W$と書く。同様に、$W$は$U$より厳密に$t$に近いと言う。便宜上、タプル$(s,s,...,s)$と$(t,t,...,t)$についても同様に上記を定義。したがって、例えば、$(s,s,...s)$はどのスライスよりもｓに近いと言える。$"\preceq"$は一般的な順序の合計を定義するものではない。
+\end{definition}
+
+\begin{definition}
+    $U$を任意のカットとする。$s$を含む$G [V\backslash U]$の連結成分の頂点セットとして$V_s(U)$を定義し、$t$を含む$G [V\backslash U]$の連結成分の頂点セットとして$V_t(U)$を定義し、$V_r$を$G [V \backslash U]$の残りの連結成分の頂点集合の和集合として定義する。すなわち、$ｓ$も$ｔ$も含まないものである（したがって、$V_r(u)$は空であり得る）。
+\end{definition}
+
+\begin{definition}
+    $(f_1,...,f_k)$に関してUをスライスとする。
+    $U\preceq X$であり、かつ$U\preceq X'\prec X$を満たすカット$X'$が存在しないようなカットを$X$とする。この時$U^+:=X$を定義する。\\
+    上記のような$X$が存在しない場合は、$U^+:=(t,t,...,t)$とする。\\
+    同様に、$Y\preceq U$かつ$U\preceq Y'\prec Y$を満たすカット$Y'$が存在しないようなカットを$Y$とする。この時、$U^-:=Y$を定義する。\\
+    上記のような$Y$が存在しない場合は$U^-:=(s,s,...,s)$とする 
+\end{definition}
+
+\begin{lemma}
+    $g(s),g(t)$を正の整数とする。$1\leq i\leq k$かつ$f_i$上で$u_i$の真後ろにある$u^+$について$U=(u_1,...,u_k)$と$W=(u_1,...,u_{i-1},u^+,u_{i+1},...,u_k)$はスライスであるとするこの時、\\
+    $U^+=(t,t...,t)$または$|V_s(U^+)|+g(s)>|V_r(U^+)\cup V_t(U^+)+g(t)|$ならば$W^+=(t,t,....,t)$または
+    $|V_s(W^+)|+g(s)>|V_r(W^+)|\cup V_t(W^+)|$
+\end{lemma}
+
+\begin{lemma}
+    $U \preceq W$のような$U,W$を$(f_1,...,f_k)$に関するスライスとする。この時、$U^+ \preceq W^+$かつ$U^- \preceq w^-$である。
+\end{lemma}
+
+\begin{definition}
+    $(A^*,S^*,B^*)$を頂点セパレータとする。この時、反復で選択された頂点$s,t$に対して、$s,t\in A$または$s,t\in B$である場合、アルゴリズム5のwhileループの反復は$(A^*,S^*,B^*)$に関して失敗する。そうでなければ、$(A^*,S^*,B^*)$に関して反復は成功したという。
+\end{definition}
+   
+
+\end{document}

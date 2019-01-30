@@ -1,0 +1,98 @@
+\documentclass{jarticle}
+%\bibliographystyle{junsrt}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}			% math系
+\usepackage{amssymb}			% math系
+\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+\usepackage{cite}				% 参考文献
+\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algpseudocode}      %アルゴリズム環境
+\usepackage{listings}  			%アルゴリズム環境
+
+\let\thealgorithm\relax %タイトル番号非表示
+
+\usepackage{comment}			% コメントアウト環境
+\usepackage{here}               % 定理環境
+\usepackage{color}
+\usepackage{citesort}
+\begin{document}
+
+\section*{アルゴリズム2}
+
+\begin{algorithm}[H]
+    \caption{Find Innermost s-sided Cut of Minimum Size} 
+    \textbf{初期設定:} \par
+    $g(s),g(t)\in \mathbb{N}$ \par
+    点素s-tパス$f_1,...,f_k$ \par
+    $\ell_i:f_i$の長さ($(s)$は0番目) \par
+    $v_{ij},0 \leq j \leq \ell_i$を$f_i$上の$j$番目の頂点とする \par
+    $w_i=v_{i1}(1\leq i \leq k)$ \par
+    valid := \textbf{false} \par 
+    {\setlength{\baselineskip}{10pt}
+    \begin{algorithmic}[1]
+      \For {$i=1$ to $k$}
+        \State {$c:=0$} \Comment {$f_i$の始まり}
+        \State {$d:=\ell_i$} \Comment {$f_i$の終わり}
+        \While {$d \neq c+1$}
+            \State {$e:= \lceil \frac{c+d}{2} \rceil$} \Comment {$f_i$二分探索}
+            \State {$W:=w_1,...,w_{i-1},v_{ie},w_{i+1},...,w_k$} \Comment {$i$番目を動かす}
+            \If {$W^+\neq (t,t,...,t)$and$|V_s(W^+)+g(s)\leq |V_r(W^+)\cup V_t(W^+)|+g(t)$}
+            \State {$c:=e$} 
+            \State {valid $:=$ \textbf{true}}
+            \Else
+            \State {$d:=e$}
+            \EndIf　\Comment {$O(m)$}
+        \EndWhile　\Comment {$O(\log n)$回反復}
+      \State {$w_i:=v_{ic}$}
+      \EndFor
+      \If {vaild}
+      \State {\textbf{return}} $(w_1,...,w_k)$
+      \Else
+      \State {\textbf{return}} $(s,s,...,s)$
+      \EndIf
+    \end{algorithmic}
+    }
+\end{algorithm}
+
+\section*{アルゴリズム3}
+
+\begin{algorithm}[H]
+  \caption{Find Innermost t-sided Cut of Minimum Size} 
+  \textbf{初期設定:} \par
+  $g(s),g(t)\in \mathbb{N}$ \par
+  点素s-tパス$f_1,...,f_k$ \par
+  $\ell_i:f_i$の長さ($(s)$は0番目) \par
+  $v_{ij},0 \leq j \leq \ell_i$を$f_i$上の$j$番目の頂点とする \par
+  $w_i=v_{i1}(1\leq i \leq k)$ \par
+  valid := \textbf{false} \par 
+  {\setlength{\baselineskip}{10pt}
+  \begin{algorithmic}[1]
+    \For {$i=1$ to $k$}
+      \State {$c:=0$} \Comment {$f_i$の始まり}
+      \State {$d:=\ell_i$} \Comment {$f_i$の終わり}
+      \While {$d \neq c+1$}
+          \State {$e:= \lfloor \frac{c+d}{2} \rfloor$} \Comment {$f_i$二分探索}
+          \State {$W:=w_1,...,w_{i-1},v_{ie},w_{i+1},...,w_k$} \Comment {$i$番目を動かす}
+          \If {$W^-\neq (t,t,...,t)$and$|V_t(W^-)+g(t)\leq |V_r(W^-)\cup V_s(W^-)|+g(s)$}
+          \State {$d:=e$} 
+          \State {vaild $:=$ \textbf{true}}
+          \Else
+          \State {$c:=e$}
+          \EndIf　\Comment {$O(m)$}
+          \EndWhile　\Comment {$O(\log n)$回反復}
+    \State {$w_i:=v_{id}$}
+    \EndFor
+    \If {vaild}
+    \State {\textbf{return} $(w_1,...,w_k)$}   
+    \Else
+    \State {\textbf{return}} $(s,s,...,s)$
+    \EndIf
+  \end{algorithmic}
+  }
+\end{algorithm}
+
+アルゴリズム2,3共に$O(km\log n)$時間
+
+\end{document}

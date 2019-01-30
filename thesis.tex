@@ -1,0 +1,94 @@
+\documentclass{thesis}
+\bibliographystyle{unsrt}
+
+\input{jdummy.def}
+
+\usepackage[dvipdfmx]{graphicx}
+
+\usepackage{amsmath}			% math系
+\usepackage{amssymb}			% math系
+%\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+\usepackage{cite}				% 参考文献
+%\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algorithmic}		% アルゴリズム環境
+\usepackage{comment}			% コメントアウト環境
+\usepackage{bm}	%太字形式のベクトル
+
+\headsep=1.4cm  %本文上にスペースを空けたい場合は 20mm にする
+
+% 定理環境
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem*{definition*}{定義}
+\newtheorem{fact}{事実}
+\newtheorem{corollary}{系}
+
+% 先生コメント用
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newcommand{\Izumi}[1]{\textcolor{blue}{#1}}
+\newcommand{\Izurep}[2]{\textcolor{red}{\sout{#1}}{\Izumi{#2}}}
+
+%%%%%%%% ここか本体 %%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\baselineskip=22pt
+\pagestyle{empty}
+
+% タイトル
+\gradyear{30}
+\papertitle{タイトル}
+\IDNumber{26115142}
+\department{情報工学科}
+\labo{泉研究室}
+\enteryear{26}
+\name{水谷　龍誠}
+\maketitle
+
+% 目次
+\pagestyle{myheadings}	% ページ番号を右上につける
+\pagenumbering{roman}	% ページ番号をローマ数字で
+\tableofcontents
+
+\newpage
+
+% 本文
+\pagenumbering{arabic}	% ページ番号をアラビア数字で
+
+\chapter{はじめに}
+
+\section{研究背景}
+
+\section{関連研究}
+test
+
+\section{論文の構成}
+test
+
+\chapter{諸定義}
+test
+
+\chapter{既存手法の説明}
+test
+
+\chapter{まとめと今後の課題}
+test
+
+
+\chapter{謝辞}
+本研究の機会を与え，数々の御指導を賜りました泉泰介准教授に深く感謝致します．
+また，本研究を進めるにあたり多くの助言を頂き，様々な御協力を頂きました泉研究室
+の学生の皆様に深く感謝致します．
+
+% 参考文献
+
+\bibliography{newmain}
+
+% 付録
+%\include{appendix}
+
+\end{document}

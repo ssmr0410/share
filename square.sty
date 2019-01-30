@@ -1,0 +1,33 @@
+\NeedsTeXFormat{pLaTeX2e}
+\ProvidesPackage{square}
+              [1997/08/25]
+\newbox\temp@squbox
+\long\def\square@frame{%
+	\vskip.5\baselineskip
+	\vbox{
+	\hrule
+	\hbox to \linewidth{%
+		\vrule
+		\hfill
+		\vbox{%
+			\vskip.5\baselineskip
+			\box\temp@squbox
+			\par
+			\vskip.5\baselineskip
+		}
+		\hfill
+		\vrule
+	}
+	\hrule
+	}
+}
+\newcommand{\square}[1][@]{%
+	\par
+	\dimen0=\linewidth
+	\advance\dimen0 by -2zw
+	\setbox\temp@squbox=\hbox\bgroup\begin{minipage}{\dimen0}%
+}
+\def\endsquare{%
+\end{minipage}\egroup
+\square@frame
+}

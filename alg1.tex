@@ -1,0 +1,90 @@
+\documentclass{jarticle}
+%\bibliographystyle{junsrt}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}			% math系
+\usepackage{amssymb}			% math系
+\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+\usepackage{cite}				% 参考文献
+\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algpseudocode}      %アルゴリズム環境
+\usepackage{listings}  			%アルゴリズム環境
+\usepackage{comment}			% コメントアウト環境
+\usepackage{here}               % 定理環境
+\usepackage{color}
+\usepackage{citesort}
+
+% 定理環境
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem*{definition*}{定義}
+\newtheorem{fact}{事実}
+\newtheorem{corollary}{系}
+
+
+\begin{document}
+\section*{諸定義}
+\begin{definition}
+  ${f_1,...,f_k}$をs-t点素パスの集合とする。
+  $U=(u_1,...u_k)$および$W=(w_1,...,w_k)$を$(f_1,...,f_k)$に関するスライスとし、すべての$1\leq i\leq k$について、$u_i$は$f_i$における$w_i$の前者または$u_i=w_i$とする。この時$U$は$W$より$S$に近いと言い、$U\preceq W$と書く。もし$1 \leq i \leq k$に対して、さらに$u_i \neq w_i$ならば、$U$は$W$より厳密に$s$に近いと言い、$U \prec W$と書く。同様に、$W$は$U$より厳密に$t$に近いと言う。便宜上、タプル$(s,s,...,s)$と$(t,t,...,t)$についても同様に上記を定義。したがって、例えば、$(s,s,...s)$はどのスライスよりもｓに近いと言える。$"\preceq"$は一般的な順序の合計を定義するものではない。
+\end{definition}
+
+\begin{definition}
+  $U$を任意のカットとする。$s$を含む$G [V\backslash U]$の連結成分の頂点セットとして$V_s(U)$を定義し、$t$を含む$G[V\backslash U]$の連結成分の頂点セットとして$V_t(U)$を定義し、$V_r$を$G[V \backslash U]$の残りの連結成分の頂点集合の和集合として定義する。すなわち、$s$も$t$も含まないものである（したがって、$V_r(U)$は空であり得る）。
+\end{definition}
+
+\begin{definition}
+  $(f_1,...,f_k)$に関してUをスライスとする。
+  $U\preceq X$であり、かつ$U\preceq X'\prec X$を満たすカット$X'$が存在しないようなカットを$X$とする。この時$U^+:=X$を定義する。\\
+  上記のような$X$が存在しない場合は、$U^+:=(t,t,...,t)$とする。\\
+  同様に、$Y\preceq U$かつ$U\preceq Y'\prec Y$を満たすカット$Y'$が存在しないようなカットを$Y$とする。この時、$U^-:=Y$を定義する。\\
+  上記のような$Y$が存在しない場合は$U^-:=(s,s,...,s)$とする 
+\end{definition}
+
+\section*{アルゴリズム1}
+
+\begin{algorithm}[H]
+        \caption{$U^+$の計算} 
+        \textbf{初期設定:} \par
+        点素s-tパス$f_1,...,f_k$ \par
+        スライス$U=(u_1,...,u_k)$ \par
+        集合$X=\{\},x\in X$ \par 
+        $w_i := u_i$ \Comment {}\par
+        {\setlength{\baselineskip}{10pt}
+        \begin{algorithmic}[1]
+          \For {$i=1$to$k$}
+          \State {$w_i$の前にあるノードをすべて$X$に入れる} \Comment {$X$は$V_s(U^+)$の候補}
+          \EndFor
+          \State {$Y:=V\backslash(X\cup U),y\in Y$}   
+          \While {$\{x,y\}\in E$がなくなるまで}
+            \If {$y=t$}
+            \State \textbf{return} $(t,t,...,t)$
+            \ElsIf {$y$が$f_i$に属している}
+            \State {$X$に$f_i$上で$y$より前にある頂点を加える}
+            \State {$Y$から$X$に加えた頂点を削除}
+            \State {$w_i=y$}
+            \Else 
+            \State {頂点$y$を$X$にを入れて$Y$から削除する}
+            \EndIf
+          \EndWhile
+          \State {\textbf{return}} $(w_1,...,w_k)$
+        \end{algorithmic}
+        }
+\end{algorithm}
+$U^+$と$U^-$の計算時間は$O(m)$
+
+\section*{分散案1}
+
+\begin{enumerate}
+  \item 各$u_i$は$w_i:=u_i$としてパスに沿って$s$方向に送信
+  \item ノード$s$から$w_i$のインデックスをブロードキャスト
+  \item 受信するノードがs-tパス上にある時、そのノードは$w_i$の値を更新してパスに沿って$s$方向にのみ送信
+  \item 受信した$w_i$の値がパス上の自身のインデックスと等しいとき、$w_i$をグラフ全体にブロードキャスト($u_i$の時は除外)
+  \item $t$が値を受信したとき、$w_i:=t$としてグラフ全体にブロードキャスト
+\end{enumerate}
+$O(kn)$ラウンドで実行可能（？）
+\end{document}
