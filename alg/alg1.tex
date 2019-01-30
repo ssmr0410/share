@@ -11,7 +11,7 @@
 \usepackage{algpseudocode}      %アルゴリズム環境
 \usepackage{listings}  			%アルゴリズム環境
 \usepackage{comment}			% コメントアウト環境
-\usepackage{here}               % 定理環境
+\usepackage{here}               
 \usepackage{color}
 \usepackage{citesort}
 
@@ -25,6 +25,11 @@
 \newtheorem{fact}{事実}
 \newtheorem{corollary}{系}
 
+% 先生コメント用
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newcommand{\Izumi}[1]{\textcolor{blue}{#1}}
+\newcommand{\Izurep}[2]{\textcolor{red}{\sout{#1}}{\Izumi{#2}}}
 
 \begin{document}
 \section*{諸定義}

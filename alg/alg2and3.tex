@@ -15,9 +15,16 @@
 
 \usepackage{comment}			% コメントアウト環境
 \usepackage{here}               % 定理環境
-\usepackage{color}
 \usepackage{citesort}
+
+% 先生コメント用
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newcommand{\Izumi}[1]{\textcolor{blue}{#1}}
+\newcommand{\Izurep}[2]{\textcolor{red}{\sout{#1}}{\Izumi{#2}}}
+
 \begin{document}
+
 
 \section*{アルゴリズム2}
 
@@ -38,12 +45,12 @@
         \While {$d \neq c+1$}
             \State {$e:= \lceil \frac{c+d}{2} \rceil$} \Comment {$f_i$二分探索}
             \State {$W:=w_1,...,w_{i-1},v_{ie},w_{i+1},...,w_k$} \Comment {$i$番目を動かす}
-            \If {$W^+\neq (t,t,...,t)$and$|V_s(W^+)+g(s)\leq |V_r(W^+)\cup V_t(W^+)|+g(t)$}
+            \If {$W^+\neq (t,t,...,t)$and$|V_s(W^+)+g(s)\leq |V_r(W^+)\cup V_t(W^+)|+g(t)$} 
             \State {$c:=e$} 
             \State {valid $:=$ \textbf{true}}
             \Else
             \State {$d:=e$}
-            \EndIf　\Comment {$O(m)$}
+            \EndIf　
         \EndWhile　\Comment {$O(\log n)$回反復}
       \State {$w_i:=v_{ic}$}
       \EndFor
@@ -75,12 +82,12 @@
       \While {$d \neq c+1$}
           \State {$e:= \lfloor \frac{c+d}{2} \rfloor$} \Comment {$f_i$二分探索}
           \State {$W:=w_1,...,w_{i-1},v_{ie},w_{i+1},...,w_k$} \Comment {$i$番目を動かす}
-          \If {$W^-\neq (t,t,...,t)$and$|V_t(W^-)+g(t)\leq |V_r(W^-)\cup V_s(W^-)|+g(s)$}
+          \If {$W^-\neq (t,t,...,t)$and$|V_t(W^-)+g(t)\leq |V_r(W^-)\cup V_s(W^-)|+g(s)$} 
           \State {$d:=e$} 
           \State {vaild $:=$ \textbf{true}}
           \Else
           \State {$c:=e$}
-          \EndIf　\Comment {$O(m)$}
+          \EndIf　
           \EndWhile　\Comment {$O(\log n)$回反復}
     \State {$w_i:=v_{id}$}
     \EndFor
@@ -94,5 +101,13 @@
 \end{algorithm}
 
 アルゴリズム2,3共に$O(km\log n)$時間
+
+\section*{分散案}
+
+\begin{lemma}[経路収集]
+  $G$の有向パス$P = \{v_1,...,v_\ell\}$を考える。ここで、各ノード$v_i$はそのパスの先頭ノードと後尾ノードを知っている。$O(\log n)$SAラウンドにおいて、各ノード$v_i$はiの値と経路内のそのインデックスを知ることができる。さらに、各ノード$v_i$が整数$x_i$と共通の結合演算子$\oplus$を知っていれば、各ノード$v_i$に先頭集約$\bigoplus_{j\leq i}xj$と後尾集約$\bigoplus_{j\geq i}x_j$を学習させることができる。
+\end{lemma}
+パスの長さやインデックスは$O(\log n)$SAラウンドで計算可能.二分探索はパス上のノードだけが計算すればよさそう？
+
 
 \end{document}

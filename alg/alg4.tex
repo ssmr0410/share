@@ -14,9 +14,25 @@
 \let\thealgorithm\relax %タイトル番号非表示
 
 \usepackage{comment}			% コメントアウト環境
-\usepackage{here}               % 定理環境
+\usepackage{here}              
 \usepackage{color}
 \usepackage{citesort}
+
+% 定理環境
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem*{definition*}{定義}
+\newtheorem{fact}{事実}
+\newtheorem{corollary}{系}
+
+% 先生コメント用
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newcommand{\Izumi}[1]{\textcolor{blue}{#1}}
+\newcommand{\Izurep}[2]{\textcolor{red}{\sout{#1}}{\Izumi{#2}}}
 
 \begin{document}
 
@@ -66,9 +82,14 @@
 
 アルゴリズムは$O(K^2m\log n)$で実行される
 
+\begin{lemma}
+    
+\end{lemma}
+
 \section*{分散案}
 s-t点素パス計算：$\tilde{O}(K^{O(1)}(\sqrt{n} + D))$ラウンド \par
 アルゴリズム2,3：$\tilde{O}(K^2n)$ラウンド \par
-$M_s,M_t$の計算：
+$M_s,M_t$の計算：2回のSAラウンドで出来る(できそう)\par
+縮約した頂点は連結なので通信可能
 
 \end{document}

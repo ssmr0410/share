@@ -1,3 +1,3 @@
-# Approximating Small Balanced Vertex Separator
+# separator,cut
 
 水谷卒論

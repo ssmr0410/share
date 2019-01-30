@@ -18,6 +18,12 @@
 \usepackage{color}
 \usepackage{citesort}
 
+% 先生コメント用
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newcommand{\Izumi}[1]{\textcolor{blue}{#1}}
+\newcommand{\Izurep}[2]{\textcolor{red}{\sout{#1}}{\Izumi{#2}}}
+
 \begin{document}
 
 \section*{アルゴリズム5}
@@ -52,7 +58,7 @@
     \end{algorithmic}
     }
 \end{algorithm}
-
-実行時間は高確率で$O(\varepsilon^{-1}K^3\log^{2+o(1)} n)$
+セパレータのサイズは高確率で$O(\varepsilon^{-1}K^2\log^{1+o(1)}n)$ \par 
+実行時間は高確率で$O(\varepsilon^{-1}K^3m\log^{2+o(1)}n)$
 
 \end{document}
