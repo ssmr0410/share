@@ -112,7 +112,12 @@ $O(kn)$ラウンドで実行可能（？）
     \item 各$C$内で受け取ったスライスのインデックスと大小比較
     \item どれか一つでもスライスのインデックスより小さい時,$C$を$X$に追加
     \item $X$内でパスの最大値を収集(kSAラウンド)
-  \end{itemize}  
+  \end{itemize}
+  \item loop 一番長い点素パスの長さ$\ell$分だけ繰り返す可能性
+  \item 収集したインデックスの最大値(仮$w_i$)の1つ前までのパスの頂点を$X$に追加
+  \item 最小値が$x_i$より小さい$C$を$X$に追加
+  \item 最大値収集,$w_i$を更新
 \end{enumerate}
+$\ell k$SAラウンド
 
 \end{document}

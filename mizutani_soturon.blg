@@ -1,0 +1,47 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2018/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: mizutani_soturon.aux
+The style file: unsrt.bst
+Database file #1: mizutani_references.bib
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            471 strings with 4315 characters,
+and the built_in function-call counts, 1278 in all, are:
+= -- 134
+> -- 31
+< -- 3
++ -- 12
+- -- 8
+* -- 62
+:= -- 174
+add.period$ -- 15
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 71
+empty$ -- 129
+format.name$ -- 8
+if$ -- 316
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 21
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 47
+stack$ -- 0
+substring$ -- 96
+swap$ -- 34
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 13
+width$ -- 5
+write$ -- 48
+is.kanji.str$ -- 0

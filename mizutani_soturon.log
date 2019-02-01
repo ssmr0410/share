@@ -1,10 +1,11 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  31 JAN 2019 01:18
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  1 FEB 2019 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/SSBSMR/Desktop/semi/soturon/mizutani_soturon
-(c:/Users/SSBSMR/Desktop/semi/soturon/mizutani_soturon.tex
-pLaTeX2e <2018-05-20> (based on LaTeX2e <2018-04-01> patch level 5)
+**c:/Users/ryusei/Desktop/semi/share/mizutani_soturon
+(c:/Users/ryusei/Desktop/semi/share/mizutani_soturon.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./thesis.cls
 Document Class: thesis 1999/1/19 v0.2b Ishiilab Thesis Class
 \c@@paper=\count83
@@ -107,11 +108,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (./cite.sty
+)) (c:/texlive/2018/texmf-dist/tex/latex/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
-) (./algorithm.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (c:/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -125,15 +126,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks23
 \c@algorithm=\count105
-) (./algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count106
-\c@ALC@line=\count107
-\c@ALC@rem=\count108
-\c@ALC@depth=\count109
-\ALC@tlm=\skip46
-\algorithmicindent=\skip47
-) (c:/texlive/2018/texmf-dist/tex/latex/comment/comment.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/algpseudocode.sty
+Package: algpseudocode 
+ (c:/texlive/2018/texmf-dist/tex/latex/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count106
+\c@ALG@rem=\count107
+\c@ALG@nested=\count108
+\ALG@tlm=\skip46
+\ALG@thistlm=\skip47
+\c@ALG@Lnr=\count109
+\c@ALG@blocknr=\count110
+\c@ALG@storecount=\count111
+\c@ALG@tmpcounter=\count112
+\ALG@tmplength=\skip48
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count113
+\lst@gtempboxa=\box46
+\lst@token=\toks24
+\lst@length=\count114
+\lst@currlwidth=\dimen132
+\lst@column=\count115
+\lst@pos=\count116
+\lst@lostspace=\dimen133
+\lst@width=\dimen134
+\lst@newlines=\count117
+\lst@lineno=\count118
+\lst@maxwidth=\dimen135
+ (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box47
+) (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (c:/texlive/2018/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
  Excluding comment 'comment') (c:/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
@@ -143,35 +176,35 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldmincho=\mathgroup10
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
-) (./amsthm.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
-\thm@preskip=\skip48
-\thm@postskip=\skip49
-\thm@headsep=\skip50
-\dth@everypar=\toks29
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks30
 )
-\c@theorem=\count110
-\c@lemma=\count111
-\c@definition=\count112
-\c@fact=\count113
-\c@corollary=\count114
+\c@theorem=\count121
+\c@lemma=\count122
+\c@definition=\count123
+\c@fact=\count124
+\c@corollary=\count125
  (./ulem.sty
-\UL@box=\box46
-\UL@hyphenbox=\box47
-\UL@skip=\skip51
-\UL@hook=\toks30
-\UL@height=\dimen132
-\UL@pe=\count115
-\UL@pixel=\dimen133
-\ULC@box=\box48
+\UL@box=\box48
+\UL@hyphenbox=\box49
+\UL@skip=\skip52
+\UL@hook=\toks31
+\UL@height=\dimen136
+\UL@pe=\count126
+\UL@pixel=\dimen137
+\ULC@box=\box50
 Package: ulem 2012/05/18
-\ULdepth=\dimen134
-) (./color.sty
+\ULdepth=\dimen138
+) (c:/texlive/2018/texmf-dist/tex/latex/color.sty
 Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
  (c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -184,36 +217,37 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )) (./mizutani_soturon.aux)
 \openout1 = `mizutani_soturon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+\c@lstlisting=\count127
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [0
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
  (./mizutani_soturon.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -228,41 +262,51 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 ]
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 64.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 64.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 67.
 [1
 
 ]
 第 2 章
 [2
 
-] [3]
-Overfull \hbox (5.31267pt too wide) in paragraph at lines 113--114
-[]\JY1/gt/m/n/12 系 \OT1/cmr/bx/n/12 1. []\JY1/mc/m/n/12 補題 \OT1/cmr/m/n/12 1 \JY1/mc/m/n/12 のグラフ $\OML/cmm/m/it/12 G$ \JY1/mc/m/n/12 を一般のグラフに置き換えると 、 最大 $\OML/cmm/m/it/12 `$ \JY1/mc/m/n/12 本の \OT1/cmr/m/n/12 s-t \JY1/mc/m/n/12 パスは $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 `[]\OT1/cmr/m/n/12 ([] +
+]
+Overfull \hbox (11.96405pt too wide) in paragraph at lines 102--104
+[]\JY1/gt/m/n/12 定義 \OT1/cmr/bx/n/12 2. []$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 f[]; [] ; f[]\OMS/cmsy/m/n/12 g$ \JY1/mc/m/n/12 を \OT1/cmr/m/n/12 s-t \JY1/mc/m/n/12 点素パスの集合とする\OT1/cmr/m/n/12 . $\OML/cmm/m/it/12 U \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 および $\OML/cmm/m/it/12 W \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 w[]; [] ; w[]\OT1/cmr/m/n/12 )$
  []
 
-[4]
+[3] [4] [5]
 第 3 章
-[5
-
-]
-第 4 章
 [6
 
 ]
+Overfull \hbox (46.36615pt too wide) in paragraph at lines 169--171
+[]\JY1/mc/m/n/12 グラフ $\OML/cmm/m/it/12 G$ \JY1/mc/m/n/12 がサイズ $\OML/cmm/m/it/12 K$ \JY1/mc/m/n/12 の $\OML/cmm/m/it/12 ^^K$\OT1/cmr/m/n/12 -\JY1/mc/m/n/12 セパレ ータを含んでいるとき\OT1/cmr/m/n/12 , \JY1/mc/m/n/12 アルゴリズムはサイズ $\OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 "[]K[] [][] n\OT1/cmr/m/n/12 )$
+ []
+
+[7]
+第 4 章
+[8
+
+] [9]
 第 5 章
-No file mizutani_soturon.bbl.
-[7
+[10
+
+]
+第 6 章
+(./mizutani_soturon.bbl [11
+
+]) [12
 
 ] (./mizutani_soturon.aux) ) 
 Here is how much of TeX's memory you used:
- 2386 strings out of 494746
- 27789 string characters out of 6181406
- 93522 words of memory out of 5000000
- 6156 multiletter control sequences out of 15000+600000
- 26050 words of font info for 101 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 27i,6n,27p,701b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 4104 strings out of 493281
+ 53007 string characters out of 6148126
+ 126025 words of memory out of 5000000
+ 7971 multiletter control sequences out of 15000+600000
+ 26397 words of font info for 102 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 27i,8n,32p,699b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mizutani_soturon.dvi (9 pages, 15120 bytes).
+Output written on mizutani_soturon.dvi (14 pages, 32448 bytes).
