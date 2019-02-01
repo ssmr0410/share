@@ -50,6 +50,10 @@
   上記のような$Y$が存在しない場合は$U^-:=(s,s,...,s)$とする 
 \end{definition}
 
+\begin{definition}[Subgraph Aggregation]
+  $G=(V,E)$をネットワークグラフとし、$\mathcal{P} =(P_1,...P_{|\mathcal{P}|})$をpartの集合とし、各$P_i$について$H_i$を$P_i$のノード上のGの連結部分グラフとする。必ずしもグラフ$G[P_i]$から誘導されるとは限らない。各部分グラフ$H_i$について、$V(H_i)$内のすべてのノードが部分グラフ$H_i$内の隣接ノードを認識し、それ以外は何も知らないと仮定する。すべてのノード$v\in \bigcup_iP_i$がO(log n)ビットの整数$x_v$を持ち、$\oplus$を長さO（log n）の整数に作用する結合関数とする。$P_i$内の各ノードは値$\bigoplus_{v\in P_i}x_v$、すなわち$P_i$内のすべての値$x_v$の集合$\oplus$を知りたいとする。このようなタスクをオペレーター$\oplus$におけるSubgraph Aggregationと呼ぶ。
+\end{definition}
+
 \section*{アルゴリズム1}
 
 \begin{algorithm}[H]
@@ -82,6 +86,7 @@
 \end{algorithm}
 $U^+$と$U^-$の計算時間は$O(m)$
 
+\begin{comment}
 \section*{分散案1}
 
 \begin{enumerate}
@@ -92,4 +97,22 @@ $U^+$と$U^-$の計算時間は$O(m)$
   \item $t$が値を受信したとき、$w_i:=t$としてグラフ全体にブロードキャスト
 \end{enumerate}
 $O(kn)$ラウンドで実行可能（？）
+\end{comment}
+
+\newpage
+
+\section*{分散案}
+\begin{enumerate}
+  \item 点素パス上の各頂点が隣接頂点にパス上のインデックスをブロードキャスト
+  \item 各点素パスの頂点を含まない$G$の連結成分内(仮$C$)で,受け取ったパスのインデックスの最大値最小値を収集(2kSAラウンド)
+  \item スライス$U$のインデックスを各点素パス上のノードが知る(kSAラウンド)
+  \item パス上の各頂点がスライス$U$のインデックスを隣接頂点にブロードキャスト(kラウンド)
+  \item 各$C$内の頂点が点素パスの情報を2つ以上知っているとき
+  \begin{itemize}
+    \item 各$C$内で受け取ったスライスのインデックスと大小比較
+    \item どれか一つでもスライスのインデックスより小さい時,$C$を$X$に追加
+    \item $X$内でパスの最大値を収集(kSAラウンド)
+  \end{itemize}  
+\end{enumerate}
+
 \end{document}
