@@ -1,11 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{haeupler2018round}
-Bernhard Haeupler, D~Ellis Hershkowitz, and David Wajc.
-\newblock Round-and message-optimal distributed graph algorithms.
-\newblock In {\em Proceedings of the 2018 ACM Symposium on Principles of
-  Distributed Computing}, pages 119--128. ACM, 2018.
-
 \bibitem{ghaffari2016distributed}
 Mohsen Ghaffari and Bernhard Haeupler.
 \newblock Distributed algorithms for planar networks ii: Low-congestion
@@ -17,6 +11,12 @@ Mohsen Ghaffari and Bernhard Haeupler.
 Jason Li.
 \newblock Distributed treewidth computation.
 \newblock {\em arXiv preprint arXiv:1805.10708}, 2018.
+
+\bibitem{haeupler2018round}
+Bernhard Haeupler, D~Ellis Hershkowitz, and David Wajc.
+\newblock Round-and message-optimal distributed graph algorithms.
+\newblock In {\em Proceedings of the 2018 ACM Symposium on Principles of
+  Distributed Computing}, pages 119--128. ACM, 2018.
 
 \bibitem{brandt2017approximating}
 Sebastian Brandt and Roger Wattenhofer.

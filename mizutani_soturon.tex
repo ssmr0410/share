@@ -110,13 +110,12 @@ s-t点素パスの最大本数について考える.メンガーの定理によ�
 頂点集合$V$の分割$(A,S,B):V=A \cup S \cup B$について,$|A|\leq \frac{2}{3}|V|$かつ$|B|\leq \frac{2}{3}|V|$であり,集合$A,B$間に辺が存在しないとき,集合$S$を$G$のセパレータと呼ぶ.$0 <\alpha < 1$とし,上記の分割$(A,S,B)$に対して$|A|,|B|\leq \alpha|V|$の時,$S$を$\alpha$-セパレータと呼ぶ.\par
 セパレータ,またはカットはある値$\alpha$に関して,セパレータやカットによって分割された全ての頂点集合のサイズが高々$\alpha |V|$以下である時,セパレータやカットについてバランスが取れていると言うことにする.
 
-\section{Subgraph Aggregation\cite{haeupler2018round}{li2018distributed}}
-GhaffariとHaeupler\cite{ghaffari2016distributed}のショートカットフレームワークは,制限されたグラ
-フ族の分散アルゴリズムを設計する上で有益であることが証明されて
+\section{Subgraph Aggregation}
+GhaffariとHaeupler\cite{ghaffari2016distributed}のショートカットフレームワークは,制限されたグラフ族の分散アルゴリズムを設計する上で有益であることが証明されて
 いる.さらに,このショートカットフレームワークの制約をさらに弱めて改良されたタスクがJason\cite{li2018distributed}によって示されている.
 この論文では,このショートカットのフレームワークの内部動作には触れずにSubgraph Aggregationとして定義されているタスクを利用する.
 
-\begin{definition}[Subgraph Aggregation]
+\begin{definition}[Subgraph Aggregation\cite{li2018distributed}\cite{haeupler2018round}]
     $G=(V,E)$をネットワークグラフとし,$\mathcal{P} =(P_1,...P_{|\mathcal{P}|})$をパートの集合,各$P_i$について$H_i$を$P_i$のノード上のGの連結部分グラフとする.必ずしもグラフ$G[P_i]$から誘導されるとは限らない.各部分グラフ$H_i$について、$V(H_i)$内のすべてのノードが部分グラフ$H_i$内の隣接ノードを認識し、それ以外は何も知らないと仮定する.すべてのノード$v\in \bigcup_iP_i$がO(log n)ビットの整数$x_v$を持ち,$\oplus$を長さO（log n）の整数に作用する結合関数とする.$P_i$内の各ノードは値$\bigoplus_{v\in P_i}x_v$、すなわち$P_i$内のすべての値$x_v$の集合$\oplus$を知りたいとする.このようなタスクをオペレーター$\oplus$におけるSubgraph Aggregationと呼ぶ.
 \end{definition}
 
