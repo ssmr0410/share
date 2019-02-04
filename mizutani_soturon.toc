@@ -9,6 +9,7 @@
 \contentsline {chapter}{\numberline {第4章}分散実装}{8}
 \contentsline {section}{\numberline {4.1}カット探索}{8}
 \contentsline {section}{\numberline {4.2}縮約アルゴリズム}{9}
-\contentsline {chapter}{\numberline {第5章}まとめと今後の課題}{10}
-\contentsline {chapter}{\numberline {第6章}謝辞}{11}
-\contentsline {chapter}{\numberline {}参考文献}{12}
+\contentsline {section}{\numberline {4.3}近似アルゴリズム}{9}
+\contentsline {chapter}{\numberline {第5章}まとめと今後の課題}{11}
+\contentsline {chapter}{\numberline {第6章}謝辞}{12}
+\contentsline {chapter}{\numberline {}参考文献}{13}
