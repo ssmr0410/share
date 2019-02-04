@@ -7,9 +7,10 @@
 \contentsline {section}{\numberline {2.3}s-t点素パス探索アルゴリズム}{4}
 \contentsline {chapter}{\numberline {第3章}既存手法の概要}{6}
 \contentsline {chapter}{\numberline {第4章}分散実装}{8}
-\contentsline {section}{\numberline {4.1}カット探索}{8}
+\contentsline {section}{\numberline {4.1}カット探索アルゴリズム}{8}
 \contentsline {section}{\numberline {4.2}縮約アルゴリズム}{9}
-\contentsline {section}{\numberline {4.3}近似アルゴリズム}{9}
-\contentsline {chapter}{\numberline {第5章}まとめと今後の課題}{11}
-\contentsline {chapter}{\numberline {第6章}謝辞}{12}
-\contentsline {chapter}{\numberline {}参考文献}{13}
+\contentsline {section}{\numberline {4.3}近似アルゴリズム}{12}
+\contentsline {section}{\numberline {4.4}アルゴリズムの評価}{12}
+\contentsline {chapter}{\numberline {第5章}まとめと今後の課題}{13}
+\contentsline {chapter}{\numberline {第6章}謝辞}{14}
+\contentsline {chapter}{\numberline {}参考文献}{15}

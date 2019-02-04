@@ -1,11 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  4 FEB 2019 17:33
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  5 FEB 2019 06:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/ryusei/Desktop/semi/share/mizutani_soturon
-(c:/Users/ryusei/Desktop/semi/share/mizutani_soturon.tex
-pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+**c:/Users/SSBSMR/Desktop/semi/share/mizutani_soturon
+(c:/Users/SSBSMR/Desktop/semi/share/mizutani_soturon.tex
+pLaTeX2e <2018-05-20> (based on LaTeX2e <2018-04-01> patch level 5)
 (./thesis.cls
 Document Class: thesis 1999/1/19 v0.2b Ishiilab Thesis Class
 \c@@paper=\count83
@@ -119,7 +118,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
-) (c:/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -144,7 +143,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip48
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+) (c:/texlive/texmf-local/tex/latex/listings/listings.sty
 \lst@mode=\count113
 \lst@gtempboxa=\box46
 \lst@token=\toks24
@@ -157,12 +156,12 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 \lst@newlines=\count117
 \lst@lineno=\count118
 \lst@maxwidth=\dimen135
- (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+ (c:/texlive/texmf-local/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count119
 \lst@skipnumbers=\count120
 \lst@framebox=\box47
-) (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+) (c:/texlive/texmf-local/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
@@ -217,37 +216,37 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )) (./mizutani_soturon.aux)
 \openout1 = `mizutani_soturon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 \c@lstlisting=\count127
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [0
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 61.
  (./mizutani_soturon.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -262,9 +261,9 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 ]
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 67.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 67.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 70.
 [1
 
 ]
@@ -272,7 +271,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 [2
 
 ]
-Overfull \hbox (11.96405pt too wide) in paragraph at lines 98--100
+Overfull \hbox (11.96405pt too wide) in paragraph at lines 101--103
 []\JY1/gt/m/n/12 定義 \OT1/cmr/bx/n/12 2. []$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 f[]; [] ; f[]\OMS/cmsy/m/n/12 g$ \JY1/mc/m/n/12 を \OT1/cmr/m/n/12 s-t \JY1/mc/m/n/12 点素パスの集合とする\OT1/cmr/m/n/12 . $\OML/cmm/m/it/12 U \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 および $\OML/cmm/m/it/12 W \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 w[]; [] ; w[]\OT1/cmr/m/n/12 )$
  []
 
@@ -284,31 +283,24 @@ Overfull \hbox (11.96405pt too wide) in paragraph at lines 98--100
 第 4 章
 [8
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 206.
- (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
- [9] [10]
+] [9] [10] [11] [12]
 第 5 章
-[11
+[13
 
 ]
 第 6 章
-(./mizutani_soturon.bbl [12
+(./mizutani_soturon.bbl [14
 
-]) [13
+]) [15
 
 ] (./mizutani_soturon.aux) ) 
 Here is how much of TeX's memory you used:
- 4097 strings out of 493281
- 52893 string characters out of 6148126
- 125041 words of memory out of 5000000
- 7961 multiletter control sequences out of 15000+600000
+ 4109 strings out of 494746
+ 52977 string characters out of 6181406
+ 126570 words of memory out of 5000000
+ 7860 multiletter control sequences out of 15000+600000
  26397 words of font info for 102 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 27i,8n,32p,699b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 27i,8n,32p,699b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mizutani_soturon.dvi (15 pages, 37872 bytes).
+Output written on mizutani_soturon.dvi (17 pages, 49468 bytes).

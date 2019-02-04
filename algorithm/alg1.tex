@@ -86,18 +86,6 @@
 \end{algorithm}
 $U^+$と$U^-$の計算時間は$O(m)$
 
-\begin{comment}
-\section*{分散案1}
-
-\begin{enumerate}
-  \item 各$u_i$は$w_i:=u_i$としてパスに沿って$s$方向に送信
-  \item ノード$s$から$w_i$のインデックスをブロードキャスト
-  \item 受信するノードがs-tパス上にある時、そのノードは$w_i$の値を更新してパスに沿って$s$方向にのみ送信
-  \item 受信した$w_i$の値がパス上の自身のインデックスと等しいとき、$w_i$をグラフ全体にブロードキャスト($u_i$の時は除外)
-  \item $t$が値を受信したとき、$w_i:=t$としてグラフ全体にブロードキャスト
-\end{enumerate}
-$O(kn)$ラウンドで実行可能（？）
-\end{comment}
 
 \newpage
 
