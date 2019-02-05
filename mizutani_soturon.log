@@ -1,10 +1,11 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  5 FEB 2019 06:01
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  5 FEB 2019 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/SSBSMR/Desktop/semi/share/mizutani_soturon
-(c:/Users/SSBSMR/Desktop/semi/share/mizutani_soturon.tex
-pLaTeX2e <2018-05-20> (based on LaTeX2e <2018-04-01> patch level 5)
+**c:/Users/ryusei/Desktop/semi/share/mizutani_soturon
+(c:/Users/ryusei/Desktop/semi/share/mizutani_soturon.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./thesis.cls
 Document Class: thesis 1999/1/19 v0.2b Ishiilab Thesis Class
 \c@@paper=\count83
@@ -118,7 +119,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
-) (c:/texlive/2018/texmf-dist/tex/latex/algorithm.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -143,7 +144,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip48
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (c:/texlive/texmf-local/tex/latex/listings/listings.sty
+) (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count113
 \lst@gtempboxa=\box46
 \lst@token=\toks24
@@ -156,12 +157,12 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 \lst@newlines=\count117
 \lst@lineno=\count118
 \lst@maxwidth=\dimen135
- (c:/texlive/texmf-local/tex/latex/listings/lstmisc.sty
+ (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count119
 \lst@skipnumbers=\count120
 \lst@framebox=\box47
-) (c:/texlive/texmf-local/tex/latex/listings/listings.cfg
+) (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
@@ -271,7 +272,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 [2
 
 ]
-Overfull \hbox (11.96405pt too wide) in paragraph at lines 101--103
+Overfull \hbox (11.96405pt too wide) in paragraph at lines 102--104
 []\JY1/gt/m/n/12 定義 \OT1/cmr/bx/n/12 2. []$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 f[]; [] ; f[]\OMS/cmsy/m/n/12 g$ \JY1/mc/m/n/12 を \OT1/cmr/m/n/12 s-t \JY1/mc/m/n/12 点素パスの集合とする\OT1/cmr/m/n/12 . $\OML/cmm/m/it/12 U \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 および $\OML/cmm/m/it/12 W \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 w[]; [] ; w[]\OT1/cmr/m/n/12 )$
  []
 
@@ -295,12 +296,12 @@ Overfull \hbox (11.96405pt too wide) in paragraph at lines 101--103
 
 ] (./mizutani_soturon.aux) ) 
 Here is how much of TeX's memory you used:
- 4109 strings out of 494746
- 52977 string characters out of 6181406
- 126570 words of memory out of 5000000
- 7860 multiletter control sequences out of 15000+600000
+ 4110 strings out of 493281
+ 53075 string characters out of 6148126
+ 131027 words of memory out of 5000000
+ 7977 multiletter control sequences out of 15000+600000
  26397 words of font info for 102 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 929 hyphenation exceptions out of 8191
  27i,8n,32p,699b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mizutani_soturon.dvi (17 pages, 49468 bytes).
+Output written on mizutani_soturon.dvi (17 pages, 50644 bytes).

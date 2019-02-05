@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{brandt2017approximating}
+Sebastian Brandt and Roger Wattenhofer.
+\newblock Approximating small balanced vertex separators in almost linear time.
+\newblock In {\em Workshop on Algorithms and Data Structures}, pages 229--240.
+  Springer, 2017.
+
 \bibitem{ghaffari2016distributed}
 Mohsen Ghaffari and Bernhard Haeupler.
 \newblock Distributed algorithms for planar networks ii: Low-congestion
@@ -17,11 +23,5 @@ Bernhard Haeupler, D~Ellis Hershkowitz, and David Wajc.
 \newblock Round-and message-optimal distributed graph algorithms.
 \newblock In {\em Proceedings of the 2018 ACM Symposium on Principles of
   Distributed Computing}, pages 119--128. ACM, 2018.
-
-\bibitem{brandt2017approximating}
-Sebastian Brandt and Roger Wattenhofer.
-\newblock Approximating small balanced vertex separators in almost linear time.
-\newblock In {\em Workshop on Algorithms and Data Structures}, pages 229--240.
-  Springer, 2017.
 
 \end{thebibliography}

@@ -1,6 +1,6 @@
 \contentsline {chapter}{\numberline {第1章}はじめに}{1}
 \contentsline {section}{\numberline {1.1}研究背景}{1}
-\contentsline {section}{\numberline {1.2}研究結果}{1}
+\contentsline {section}{\numberline {1.2}論文構成}{1}
 \contentsline {chapter}{\numberline {第2章}準備}{2}
 \contentsline {section}{\numberline {2.1}セパレータ}{3}
 \contentsline {section}{\numberline {2.2}Subgraph Aggregation}{4}
@@ -11,6 +11,6 @@
 \contentsline {section}{\numberline {4.2}縮約アルゴリズム}{9}
 \contentsline {section}{\numberline {4.3}近似アルゴリズム}{12}
 \contentsline {section}{\numberline {4.4}アルゴリズムの評価}{12}
-\contentsline {chapter}{\numberline {第5章}まとめと今後の課題}{13}
+\contentsline {chapter}{\numberline {第5章}研究のまとめ}{13}
 \contentsline {chapter}{\numberline {第6章}謝辞}{14}
 \contentsline {chapter}{\numberline {}参考文献}{15}
