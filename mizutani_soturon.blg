@@ -3,49 +3,48 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: mizutani_soturon.aux
 The style file: unsrt.bst
 Database file #1: mizutani_references.bib
-Warning--I didn't find a database entry for "XXXX"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "HIZ16"
-You've used 4 entries,
+You've used 5 entries,
             1791 wiz_defined-function locations,
-            475 strings with 4333 characters,
-and the built_in function-call counts, 1278 in all, are:
-= -- 134
-> -- 31
+            480 strings with 4456 characters,
+and the built_in function-call counts, 1518 in all, are:
+= -- 158
+> -- 39
 < -- 3
-+ -- 12
-- -- 8
-* -- 62
-:= -- 174
-add.period$ -- 15
-call.type$ -- 4
-change.case$ -- 4
++ -- 15
+- -- 10
+* -- 81
+:= -- 211
+add.period$ -- 18
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 71
-empty$ -- 129
-format.name$ -- 8
-if$ -- 316
+cite$ -- 5
+duplicate$ -- 80
+empty$ -- 153
+format.name$ -- 10
+if$ -- 368
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 21
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 5
+pop$ -- 22
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 47
+skip$ -- 51
 stack$ -- 0
-substring$ -- 96
-swap$ -- 34
+substring$ -- 121
+swap$ -- 35
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 13
-width$ -- 5
-write$ -- 48
+while$ -- 16
+width$ -- 6
+write$ -- 59
 is.kanji.str$ -- 0
-(There were 3 warnings)
+(There were 2 warnings)

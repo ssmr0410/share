@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{bui1992finding}
+Thang~Nguyen Bui and Curt Jones.
+\newblock Finding good approximate vertex and edge partitions is np-hard.
+\newblock {\em Information Processing Letters}, 42(3):153--159, 1992.
+
 \bibitem{brandt2017approximating}
 Sebastian Brandt and Roger Wattenhofer.
 \newblock Approximating small balanced vertex separators in almost linear time.
