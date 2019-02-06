@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  6 FEB 2019 15:17
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  6 FEB 2019 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -261,47 +261,62 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 
 ]
 第 1 章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 70.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 70.
+
+LaTeX Warning: Citation `XXXX' on page 1 undefined on input line 79.
+
 [1
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 97.
+ [2]
 第 2 章
-[2
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 106.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 106.
+[3
 
 ]
-Overfull \hbox (11.96405pt too wide) in paragraph at lines 102--104
-[]\JY1/gt/m/n/12 定義 \OT1/cmr/bx/n/12 2. []$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 f[]; [] ; f[]\OMS/cmsy/m/n/12 g$ \JY1/mc/m/n/12 を \OT1/cmr/m/n/12 s-t \JY1/mc/m/n/12 点素パスの集合とする\OT1/cmr/m/n/12 . $\OML/cmm/m/it/12 U \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 および $\OML/cmm/m/it/12 W \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 w[]; [] ; w[]\OT1/cmr/m/n/12 )$
- []
 
-[3] [4] [5]
+LaTeX Warning: Citation `HIZ16' on page 4 undefined on input line 132.
+
+[4] [5] [6]
 第 3 章
-[6
+[7
 
-] [7]
+] [8]
 第 4 章
-[8
+[9
 
-] [9] [10] [11] [12]
+] [10] [11]
+
+LaTeX Warning: Reference `A-Bpath' on page 12 undefined on input line 324.
+
+[12] [13]
 第 5 章
-[13
+[14
 
 ]
 第 6 章
-(./mizutani_soturon.bbl [14
+(./mizutani_soturon.bbl [15
 
-]) [15
+]) [16
 
-] (./mizutani_soturon.aux) ) 
+] (./mizutani_soturon.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4110 strings out of 493281
- 53075 string characters out of 6148126
- 131027 words of memory out of 5000000
- 7977 multiletter control sequences out of 15000+600000
- 26397 words of font info for 102 fonts, out of 8000000 for 9000
+ 4128 strings out of 493281
+ 53343 string characters out of 6148126
+ 131019 words of memory out of 5000000
+ 7994 multiletter control sequences out of 15000+600000
+ 28805 words of font info for 111 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,8n,32p,699b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,8n,32p,593b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mizutani_soturon.dvi (17 pages, 50696 bytes).
+Output written on mizutani_soturon.dvi (18 pages, 53396 bytes).
