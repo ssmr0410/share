@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  7 FEB 2019 12:06
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.7)  7 FEB 2019 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,20 +264,20 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 97.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 97.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 95.
  [2]
 第 2 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 106.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 104.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 106.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 104.
 [3
 
 ]
 
-LaTeX Warning: Citation `HIZ16' on page 4 undefined on input line 132.
+LaTeX Warning: Citation `HIZ16' on page 4 undefined on input line 130.
 
 [4] [5] [6]
 第 3 章
@@ -289,7 +289,7 @@ LaTeX Warning: Citation `HIZ16' on page 4 undefined on input line 132.
 
 ] [10] [11]
 
-LaTeX Warning: Reference `A-Bpath' on page 12 undefined on input line 324.
+LaTeX Warning: Reference `A-Bpath' on page 12 undefined on input line 322.
 
 [12] [13]
 第 5 章
@@ -307,12 +307,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4127 strings out of 494746
- 53255 string characters out of 6181406
- 126565 words of memory out of 5000000
- 7877 multiletter control sequences out of 15000+600000
+ 4128 strings out of 494746
+ 53263 string characters out of 6181406
+ 126573 words of memory out of 5000000
+ 7878 multiletter control sequences out of 15000+600000
  28805 words of font info for 111 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  27i,8n,32p,585b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mizutani_soturon.dvi (18 pages, 53404 bytes).
+Output written on mizutani_soturon.dvi (18 pages, 53188 bytes).
