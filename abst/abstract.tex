@@ -1,0 +1,62 @@
+\documentclass[a4j,twoside]{jarticle}
+\bibliographystyle{junsrt}
+
+\input{jdummy.def} 
+%\usepackage{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amsthm}		% math系
+\usepackage{amssymb}			% math系
+%\usepackage{float}				% 図表の挿入箇所を固定する[H]指定
+%\usepackage{cite}				% 参考文献
+%\usepackage{url}				% 参考文献中のURL表記
+\usepackage{algorithm}			% アルゴリズム環境
+\usepackage{algorithmic}		% アルゴリズム環境
+\usepackage{comment}			% コメントアウト環境
+\usepackage{bm}	%太字形式のベクトル
+
+% 定理環境
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+
+
+% Unix上でのコンパイルはthesis_abst-jisを利用してください．
+\usepackage{thesis_abst}
+
+% マージンはプリンタによって変更
+\addtolength{\oddsidemargin}{0mm}
+\addtolength{\evensidemargin}{0mm}
+
+% baselinestretchを変更すると上部枠の大きさが変わるのでおすすめしない
+\renewcommand{\baselinestretch}{1}
+
+\種別{情 報 工 学 科 卒 業}  % この行を消してはいけない
+\学籍番号{26115142}
+\氏名{水谷 龍誠}
+%\英語氏名{} %未使用
+\研究室{泉}
+\系{ネットワーク} % 学生が所属する系を記入．教員(研究室)の所属する系ではない
+\題目{平面的グラフに対する直径を計算する分散アルゴリズム} % 途中で改行 "\\" を挿入可
+\年度{30} % !=年 発表は2月です
+\begin{document}              % この行を消してはいけない
+\twocolumn[\vspace*{9mm}]     % この行を消してはいけない
+\begin{論文概要}              % この行を消してはいけない
+\setcounter{page}{2}          % 表(左綴じ)は1、裏(右綴じ)は2を指定
+%%%%%%% ここからアブスト本体 %%%%%%%
+
+\section{はじめに}
+
+\section{諸定義}
+
+\section{提案アルゴリズム}
+
+\section{まとめ}
+
+\begin{thebibliography}{9}
+
+\end{thebibliography}
+%%%%%% 以下の行は消さないこと %%%%%%%
+
+\clearpage                       % この行を消すと最終ページの枠線消滅の危機
+\end{論文概要}                   % この行を消してはいけない
+\end{document}                   % この行を消してはいけない
