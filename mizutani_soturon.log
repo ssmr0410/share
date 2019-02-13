@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  12 FEB 2019 13:03
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  13 FEB 2019 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,11 +276,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 104.
 [3
 
-]
-
-LaTeX Warning: Citation `HIZ16' on page 4 undefined on input line 130.
-
-[4] [5] [6]
+] [4] [5] [6]
 第 3 章
 [7
 
@@ -298,18 +294,14 @@ LaTeX Warning: Citation `HIZ16' on page 4 undefined on input line 130.
 
 ]) [16
 
-] (./mizutani_soturon.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./mizutani_soturon.aux) ) 
 Here is how much of TeX's memory you used:
- 4128 strings out of 493281
- 53352 string characters out of 6148126
- 131030 words of memory out of 5000000
- 7994 multiletter control sequences out of 15000+600000
+ 4129 strings out of 493281
+ 53378 string characters out of 6148126
+ 131036 words of memory out of 5000000
+ 7995 multiletter control sequences out of 15000+600000
  28805 words of font info for 111 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  27i,8n,32p,586b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mizutani_soturon.dvi (18 pages, 52948 bytes).
+Output written on mizutani_soturon.dvi (18 pages, 53584 bytes).

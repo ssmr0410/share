@@ -127,7 +127,7 @@ GhaffariとHaeuplerらによる低競合ショートカット\cite{ghaffari2016d
 $O(s(n)(\sqrt{n} + D))$の分散アルゴリズムを与える．一方で，いくつかの特殊なグラフクラスを
 仮定した場合，より少ないラウンド数でSAを実現するアルゴリズムが構成可能であることが
 知られている．具体的には，以下の定理が存在する．
-\begin{theorem}[Ghaffari and Haeupler-\cite{ghaffari2016distributed}, Haeupler et al.~\cite{HIZ16}, Li et al.\cite{}, Kitagawa et al.~\cite{}] \label{SA}
+\begin{theorem}[Ghaffari and Haeupler-\cite{ghaffari2016distributed}, Haeupler et al.~\cite{haeupler2016near}, Li et al.\cite{li2018distributed}, Kitagawa et al.\cite{北川大貴2019k}] \label{SA}
     可換かつ結合的な任意の演算子$\oplus$について、各グラフクラスに対して以下に示す
     ラウンド数でSAを実現するアルゴリズムが存在する．
     \item 一般のグラフ：$O(\sqrt{n} + D)$ラウンド，
@@ -173,7 +173,6 @@ $s$-$t$点素パスと分離集合($s$-$t$点カット)について，以下の�
 $s$-$t$点素パス集合$P$に関するスライスは，$P$中の各パスに対して，その前方側（$s$に近い側）と後方側（$t$に近い側）を自然に定義する．$(f_1, \dots ,f_k)$に関する2つのスライス$U=(u_1, \dots, u_k)$および$W=(w_1, \dots ,w_k)$に対して，すべての$1\leq i\leq k$について、
 $u_i$が$f_i$における$w_i$の前方に存在するか，または$u_i=w_i$が成立するとき，$U$は$W$より
 $s$に近いと言い，$U\preceq W$と記述する．任意の$i$（$1 \leq i \leq k$）に対して,さらに$u_i \neq w_i$ならば,$U$は$W$より厳密に$s$に近いと言い，$U \prec W$と記述する．
-\Izumi{このあたり，図解を入れては？}
 
 
 本稿では，既存研究~\cite{li2018distributed}で示されている，本数最大の$s$-$t$点素パスを
