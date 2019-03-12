@@ -1,0 +1,164 @@
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.6.21)  12 MAR 2019 15:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**c:/Users/ryusei/Desktop/表紙シール/hyousi_30
+(c:/Users/ryusei/Desktop/表紙シール/hyousi_30.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2018/texmf-dist/tex/platex/base/pl209.def
+Entering pLaTeX 2.09 compatibility mode.
+(c:/texlive/2018/texmf-dist/tex/latex/base/latex209.def
+File: latex209.def 2015/02/22 v0.53 Standard LaTeX file
+
+
+          Entering LaTeX 2.09 COMPATIBILITY MODE
+ *************************************************************
+    !!WARNING!!    !!WARNING!!    !!WARNING!!    !!WARNING!!   
+ 
+ This mode attempts to provide an emulation of the LaTeX 2.09
+ author environment so that OLD documents can be successfully
+ processed. It should NOT be used for NEW documents!
+ 
+ New documents should use Standard LaTeX conventions and start
+ with the \documentclass command.
+ 
+ Compatibility mode is UNLIKELY TO WORK with LaTeX 2.09 style
+ files that change any internal macros, especially not with
+ those that change the FONT SELECTION or OUTPUT ROUTINES.
+ 
+ Therefore such style files MUST BE UPDATED to use
+          Current Standard LaTeX: LaTeX2e.
+ If you suspect that you may be using such a style file, which
+ is probably very, very old by now, then you should attempt to
+ get it updated by sending a copy of this error message to the
+ author of that file.
+ *************************************************************
+
+\footheight=\dimen118
+\@maxsep=\dimen119
+\@dblmaxsep=\dimen120
+\@cla=\count83
+\@clb=\count84
+\mscount=\count85
+(c:/texlive/2018/texmf-dist/tex/latex/base/tracefnt.sty
+Package: tracefnt 2015/02/21 v3.0k Standard LaTeX package (font tracing)
+\tracingfonts=\count86
+LaTeX Info: Redefining \selectfont on input line 106.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 268.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 269.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 270.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 276.
+LaTeX Info: Redefining \em on input line 286.
+ (c:/texlive/2018/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 332.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 334.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 336.
+) (c:/texlive/2018/texmf-dist/tex/platex/base/ptrace.sty
+Package: ptrace 2017/08/05 v1.6h Standard pLaTeX package (font tracing)
+LaTeX Info: Redefining \selectfont on input line 20.
+Applying: [2017/04/08] Construct \ystrutbox  on input line 76.
+Already applied: [0000/00/00] Construct \ystrutbox  on input line 111.
+Applying: [2017/07/29] Change zenkaku reference on input line 146.
+Already applied: [0000/00/00] Change zenkaku reference on input line 170.
+)
+\symmincho=\mathgroup11
+\symgothic=\mathgroup12
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 35.
+LaTeX Info: Redefining \bf on input line 49.
+LaTeX Info: Redefining \rm on input line 56.
+LaTeX Info: Redefining \sf on input line 57.
+LaTeX Info: Redefining \sl on input line 58.
+LaTeX Info: Redefining \sc on input line 59.
+LaTeX Info: Redefining \it on input line 60.
+LaTeX Info: Redefining \tt on input line 61.
+LaTeX Info: Redefining \em on input line 62.
+)
+Compatibility mode: loading my_jreport.sty rather than my_jreport.cls.
+ (./my_jreport.sty
+Document Style `jreport'. <18 Dec 88>
+(./jrep10.sty)
+\descriptionmargin=\dimen121
+\c@part=\count87
+\c@chapter=\count88
+\c@section=\count89
+\c@subsection=\count90
+\c@subsubsection=\count91
+\c@paragraph=\count92
+\c@subparagraph=\count93
+\c@figure=\count94
+\c@table=\count95
+ (./titlepage.sty)) (./my_12.sty) (c:/texlive/2018/texmf-dist/tex/latex/epsbox.sty
+EPSbox version 1.5 - Released May 5, 1992 (for LaTeX/jdvi2kps2.1)
+Based on EPSF macro package. version 1.2 - Released July 16, 1990
+\@darg=\dimen122
+\eps@xdim=\dimen123
+\eps@ydim=\dimen124
+\eps@width=\dimen125
+\eps@height=\dimen126
+\eps@tempdima=\dimen127
+\eps@tempdimb=\dimen128
+\eps@cnta=\count96
+\eps@cntb=\count97
+\eps@cntc=\count98
+\eps@cntd=\count99
+\ps@stream=\read1
+) (./hyousi_30.aux)
+\openout1 = `hyousi_30.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 48.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 48.
+ (c:/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [0
+
+]
+LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 120.
+LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 120.
+ [1] [2] (./hyousi_30.aux)
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+ ) 
+Here is how much of TeX's memory you used:
+ 480 strings out of 493281
+ 5593 string characters out of 6148126
+ 68088 words of memory out of 5000000
+ 4454 multiletter control sequences out of 15000+600000
+ 16501 words of font info for 64 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 24i,6n,20p,230b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on hyousi_30.dvi (3 pages, 2184 bytes).

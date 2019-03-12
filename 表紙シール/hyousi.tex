@@ -1,0 +1,59 @@
+\documentstyle[my_12,epsbox]{my_jreport}
+\pagestyle{myheadings}
+\headsep 70pt
+\topmargin -15mm
+\oddsidemargin 1cm
+\textwidth 440pt
+\textheight 55pc
+\setlength{\footskip}{70pt}
+\setlength{\baselineskip}{30pt}
+\setlength{\parskip}{6pt}
+
+\renewcommand{\textfraction}{0}
+
+\newenvironment{indention}[1]{\par
+\addtolength{\leftskip}{#1}
+\begingroup}{\endgroup\par}
+
+\newcommand{\namelistlabel}[1]{\mbox{#1}\hfil}
+\newenvironment{namelist}[1]{%
+\begin{list}{}
+{\letlmakelabel\namelistlable
+\settowidth{\labelwidth}{#1}
+\setlength{\leftmargin}{1.1\labelwidth}}
+}{%
+\end{list}}
+
+\def\theenumi{\roman{enumi}}
+\newcommand{\q}{\hspace*{1em}}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\noindent
+
+%卒論表紙シール
+{\Large 平成何年度 卒業論文}
+
+\vspace{0.15cm}
+
+{\LARGE タイトル}
+
+{\Large 
+\vspace{2cm}
+\begin{tabular}{rl}
+指導教員 泉 泰介 准教授 \\
+名古屋工業大学 情報工学科 \\
+平成何年度入学 学籍番号 番 
+\end{tabular}}
+
+{\LARGE 名前}
+
+\vspace*{2cm}
+\noindent
+
+
+\end{center}
+\end{titlepage}
+\end{document}
